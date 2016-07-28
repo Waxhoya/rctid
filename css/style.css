@@ -1,3 +1,21 @@
-scarfImg {
-	
+.scarfImg {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
 }
+
+
+.fade-in {
+	-webkit-animation: fade-in .8s ease;
+	-moz-animation: fade-in ease-in-out .8s both;
+	-ms-animation: fade-in ease-in-out .8s both;
+	-o-animation: fade-in ease-in-out .8s both;
+	animation: fade-in .8s ease;
+	visibility: visible;
+	-webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
