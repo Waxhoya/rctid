@@ -10,11 +10,12 @@ function resultTable(array) {
 
 	var table = document.getElementById("resultSpot");
 	var header = table.createTHead();
-	for (index = 1; index <= array.length; index++){
+	for (index = 0; index <= array.length; index++){
 		var row = header.insertRow();
 		var team = row.insertCell();
 		var votes = row.insertCell();
 		console.log(tartan.upVotes);
-		team.innerHTML = "<p class="scarfNameClass">"+array[index].scarfName+"</p>";
-		votes.innerHTML = "<p class="votesClass">"+array[index].upVotes+"</p>";
+		team.innerHTML = "<p class=\"scarfNameClass\">"+array[index].scarfName+"</p>";
+		votes.innerHTML = "<p class=\"votesClass\">"+array[index].upVotes+"</p>";
+	}
 }
