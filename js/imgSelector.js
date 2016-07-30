@@ -3,6 +3,7 @@ var which = [];
 function imgSelector(array) {
 	var picDelivered = 3; // Change the array length of pictures returned
 	which = [];
+	voteCount++;
 	if (voteCount > 5) {
 		console.log("imgSelector is launching resultTable")
 		resultTable(scarfBox);

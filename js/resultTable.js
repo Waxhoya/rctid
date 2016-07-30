@@ -13,7 +13,9 @@ function resultTable(array) {
 	for (index = 1; index <= array.length; index++){
 		var row = header.insertRow();
 		var team = row.insertCell();
+		var votes = row.insertCell();
 		console.log(tartan.upVotes);
-		team.innerHTML = "<b>"+array[index].name+"</b>";
+		team.innerHTML = "<h6>"+array[index].scarfName+"</h6>";
+		team.innerHTML = "<p>"+array[index].upVotes+"</p>";
 	}
 }
