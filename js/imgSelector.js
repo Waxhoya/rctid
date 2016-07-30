@@ -3,6 +3,10 @@ var which = [];
 function imgSelector(array) {
 	var picDelivered = 3; // Change the array length of pictures returned
 	which = [];
+	if (voteCount > 5) {
+		console.log("imgSelector is launching resultTable")
+		resultTable(scarfBox);
+	}
 
 	for (i = 1; i <= picDelivered; i++) {
 		var picSelect = Math.floor(Math.random() * scarfBox.length);

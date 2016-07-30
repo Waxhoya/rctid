@@ -1,14 +1,19 @@
-function resultTable() {
-	var flip = document.getElementByID("scarfPic3").className = "hidden";
-	var flop = document.getElementByID("resultSpot").className = "fade-in shown";
+
+var voteCount = 0;
+
+function resultTable(array) {
+
+	var flip1 = document.getElementById("scarfPic1").className = "hidden";
+	var flip2 = document.getElementById("scarfPic2").className = "hidden";
+	var flip3 = document.getElementById("scarfPic3").className = "hidden";
+	var flop = document.getElementById("resultSpot").className = "fade-in shown";
 
 	var table = document.getElementById("resultSpot");
 	var header = table.createTHead();
-	var row = header.insertRow(0);
-	var cell = row.insertCell(0);
-	console.log(tartan.upVotes);
-	cell.innerHTML = "<b>"+tartan.upVotes+"</b>";
-
-
+	for (index = 1; index <= array.length; index++){
+		var row = header.insertRow();
+		var team = row.insertCell();
+		console.log(tartan.upVotes);
+		team.innerHTML = "<b>"+array[index].name+"</b>";
+	}
 }
-document.getElementById("scarfPic3").addEventListener("click", resultTable);
