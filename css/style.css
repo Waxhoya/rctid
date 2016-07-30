@@ -11,6 +11,10 @@
 	display: none;
 }
 
+.toHide {
+
+}
+
 .fade-in {
 	-webkit-animation: fade-in .8s ease;
 	-moz-animation: fade-in ease-in-out .8s both;

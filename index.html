@@ -9,22 +9,24 @@
 	<title>Rose City Scarves | RCTID </title>
 	<nav>
 	</nav>
-	<div id="resultSpot" class="hidden fade-in">
-	</div>
-	<div class="toHide">
-		<img id="scarfPic1" class="scarfImg fade-in" />
-	</div>
-	<div class="toHide">
-			<img id="scarfPic2" class="scarfImg fade-in" />
-	</div>
-	<div class="toHide">
-			<img id="scarfPic3" class="scarfImg fade-in" />
-	</div>
+	<table id="resultSpot" class="hidden">
+	</table>
 
+		<div class="shown">
+			<img id="scarfPic1" class="scarfImg fade-in" />
+		</div>
+		<div class="shown">
+				<img id="scarfPic2" class="scarfImg fade-in" />
+		</div>
+		<div class="shown">
+				<img id="scarfPic3" class="scarfImg fade-in" />
+		</div>
 
+	<script src="js/resultTable.js"></script>
 	<script src="js/scarfCon.js"></script>
 	<script src="js/imgSelector.js"></script>
-	<script> imgSelector(scarfBox)</script>
+	<script>imgSelector(scarfBox)</script>
+	<script>resultTable()</script>
 
 </body>
 </html>
