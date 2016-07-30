@@ -7,6 +7,9 @@
 	height: auto;
 }
 
+.hidden {
+	display: none;
+}
 
 .fade-in {
 	-webkit-animation: fade-in .8s ease;

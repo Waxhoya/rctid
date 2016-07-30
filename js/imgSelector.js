@@ -9,11 +9,10 @@ function imgSelector(array) {
 		var theSelection = array[picSelect].image;
 		console.log("Selected: "+theSelection+" : "+which+" Long: "+!which.indexOf(picSelect));
 		if (which.indexOf(picSelect) != -1) {
-			console.log(picSelect+"already Selected.");
+			console.log(picSelect+" already Selected.");
 			i -= 1;
 			continue;
 		} else {
-
 			console.log("Attempting to push "+theSelection+" to scarfPic"+i+"!");
 			which.push(picSelect);
 			document.getElementById("scarfPic"+i).src = theSelection;
@@ -28,15 +27,15 @@ document.getElementById("scarfPic3").addEventListener("click", upvoteClick);
 
 function upvoteClick(event) {
 	var imageSource = event.target;
-//	console.log(imageSource);
+	//console.log(imageSource);
 	var getSource = imageSource.src;
 	for (var index = 0; index < scarfBox.length; index++) {
-	//	console.log("is "+scarfBox[index].image+" = "+getSource);
+	//console.log("is "+scarfBox[index].image+" = "+getSource);
 		if (getSource.indexOf(scarfBox[index].image) >= 0) {
-		//	console.log("found it: "+imageSource.src+" adding one to upvotes");
-		//	console.log(scarfBox[index].upVotes);
+		//console.log("found it: "+imageSource.src+" adding one to upvotes");
+		//console.log(scarfBox[index].upVotes);
 			scarfBox[index].upVotes++;
-		//	console.log(scarfBox[index].upVotes);
+		//console.log(scarfBox[index].upVotes);
 			imgSelector(scarfBox);
 		} else {
 		//console.log(scarfBox[index].image+" != "+getSource);
