@@ -6,7 +6,7 @@ function imgSelector(array) {
 	voteCount++;
 	if (voteCount > 15) {
 		console.log("imgSelector is launching resultTable")
-		resultTable(scarfBox);
+		drawChart(scarfBox);
 	}
 
 	for (i = 1; i <= picDelivered; i++) {

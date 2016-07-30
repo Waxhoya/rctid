@@ -9,9 +9,9 @@ var scarfChart;
 		{
 			// Change type to "doughnut", "line", "splineArea", etc.
 			type: "column",
-      dataPoints: scarfBox;
-    }
+      dataPoints: scarfBox
+    } ]
 	});
 	scarfChart.render();
 }
-window.addEventListener("load", drawChart);
+//window.addEventListener("load", drawChart);
