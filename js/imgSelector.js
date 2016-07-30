@@ -35,7 +35,7 @@ function upvoteClick(event) {
 		if (getSource.indexOf(scarfBox[index].image) >= 0) {
 			//console.log("found it: "+imageSource.src+" adding one to upvotes");
 			//console.log(scarfBox[index].upVotes);
-			scarfBox[index].upVotes++;
+			scarfBox[index].y++;
 			//console.log(scarfBox[index].upVotes);
 			imgSelector(scarfBox);
 		} else {

@@ -14,8 +14,7 @@ function resultTable(array) {
 		var row = header.insertRow();
 		var team = row.insertCell();
 		var votes = row.insertCell();
-		console.log(tartan.upVotes);
-		team.innerHTML = "<p class=\"scarfNameClass\">"+array[index].scarfName+"</p>";
-		votes.innerHTML = "<p class=\"votesClass\">"+array[index].upVotes+"</p>";
+		team.innerHTML = "<p class=\"scarfNameClass\">"+array[index].label+"</p>";
+		votes.innerHTML = "<p class=\"votesClass\">"+array[index].y+"</p>";
 	}
 }

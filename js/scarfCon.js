@@ -1,12 +1,13 @@
 function Scarf(team, name, imageLocation) {
 	this.team = team;
-	this.scarfName = name;
 	this.image = imageLocation;
 	this.upVotes = 0;
+	this.label = name;
+	this.y = 0;
 }
 
 Scarf.prototype.upvote = function() {
-	this.upVotes++;
+	this.y++;
 	imgSelector(scarfBox);
 }
 
