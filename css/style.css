@@ -1,14 +1,13 @@
-.scarfNameClass {
-	background-color: yellow;
+h1, h4 {
+	text-align: center;
 }
 
 .votesClass{
  background-color: green;
-
 }
 
-h1, h4 {
-	text-align: center;
+.scarfNameClass {
+	background-color: yellow;
 }
 
 .scarfImg {
@@ -18,7 +17,6 @@ h1, h4 {
 	padding-top: 15px;
 	width: 480px;
 	height: auto;
-	background-color: darkgrey;
 }
 
 .hidden {
