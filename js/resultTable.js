@@ -16,6 +16,6 @@ function resultTable(array) {
 		var votes = row.insertCell();
 		console.log(tartan.upVotes);
 		team.innerHTML = "<h6>"+array[index].scarfName+"</h6>";
-		team.innerHTML = "<p>"+array[index].upVotes+"</p>";
+		votes.innerHTML = "<p>"+array[index].upVotes+"</p>";
 	}
 }
