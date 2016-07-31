@@ -10,11 +10,17 @@ h2 { /* Additional styling in fonts */
 body {
 	height: 300px;
 	width: 100%;
-	background-image:url("../pics/provPark.jpg");
-	background-repeat: no-repeat;
-	flex-grow: auto;
-
 }
+
+html {
+	background-image:url("../pics/field.jpg");
+	background-color: (0, 0, 0, 0.3);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 
 .scarfImg {
 	margin-left: auto;
@@ -23,6 +29,7 @@ body {
 	padding-top: 15px;
 	width: 600px;
 	height: auto;
+	border: 0px;
 }
 
 .hidden {
