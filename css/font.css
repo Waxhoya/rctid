@@ -1,0 +1,22 @@
+/*  CSS Fonts  */
+
+h1 { /* Additional margin in stye */
+	font-family: 'Lobster', monospace;
+	text-align: center;
+	font-size: 64px;
+}
+
+h2 { /* Additional margin in stye */
+	font-family: 'Lobster', monospace;
+	text-align: center;
+	font-size: 26px;
+}
+
+h4 {
+	font-family: 'Space mono', monospace;
+	text-align: center;
+}
+
+body {
+	font-family: 'Space Mono', sans-serif;
+}
