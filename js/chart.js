@@ -7,7 +7,6 @@ var scarfChart;
 		},
 		data: [
 		{
-			// Change type to "doughnut", "line", "splineArea", etc.
 			type: "column",
       dataPoints: scarfBox
     } ]
@@ -18,3 +17,10 @@ var scarfChart;
   var flip3 = document.getElementById("scarfPic3").className = "hidden";
 }
 //window.addEventListener("load", drawChart);
+
+function voteAgain () {
+  var flip1 = document.getElementById("scarfPic1").className = "scarfImg";
+  var flip2 = document.getElementById("scarfPic2").className = "scarfImg";
+  var flip3 = document.getElementById("scarfPic3").className = "scarfImg";
+  var flip3 = document.getElementById("chartTarget").className = "hidden";
+}
