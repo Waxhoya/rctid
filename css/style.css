@@ -7,6 +7,12 @@ h2 { /* Additional styling in fonts */
 	margin: 12px;
 }
 
+body {
+	height: 300px;
+	width: 100%;
+	background-image:url("../pics/provPark.jpg");
+	background-repeat: no-repeat;
+}
 
 .scarfImg {
 	margin-left: auto;
