@@ -6,10 +6,10 @@ h1 { /* Additional margin in stye */
 	font-size: 64px;
 }
 
-h2 { /* Additional margin in stye */
+h3 { /* Additional margin in stye */
 	font-family: 'Lobster', monospace;
 	text-align: center;
-	font-size: 26px;
+	font-size: 18px;
 }
 
 h4 {
