@@ -8,15 +8,15 @@
 	<body>
 		<title>Rose City Scarves | RCTID </title>
 		<nav>
-			<button id="voteAgain" onclick="voteAgain()" class="button">Vote Again?</button>
-			<button id="voteAgain" onclick="voteAgain()" class="button">See Results</button>
-			<button id="voteAgain" onclick="voteAgain()" class="button">Style Sheet</button>
 		</nav>
 		<table id="resultSpot" class="hidden">
 		</table>
 
 		<h1>Scarf Squad</h1>
 		<h3>Timbers Edition</h3>
+		<div>
+			<button id="voteAgain" onclick="voteAgain()" class="hidden">Vote Again?</button>
+		</div>
 
 		<div id="chartTarget">
 		</div>
@@ -30,6 +30,7 @@
 		<div class="shown">
 				<img id="scarfPic3" class="scarfImg fade-in" />
 		</div>
+
 
 		<script src="js/resultTable.js"></script>
 		<script src="js/scarfCon.js"></script>
