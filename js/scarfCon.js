@@ -6,6 +6,15 @@ function Scarf(team, name, imageLocation) {
 	this.y = 0;
 }
 
+function rebuildScarfBox () {
+	for (index=0; index < scarfBox.length; index++) {
+		scarfBox[index].y = 0;
+	}
+	voteAgain();
+}
+
+var scarfBox = [];
+
 var chainsaw = new Scarf("Timbers", "Chainsaw Border", "pics/ptfcs1.jpg");
 var rnChamp = new Scarf("Timbers", "Champions 15 RoughNeck", "pics/ptfc1.jpg");
 var argyle = new Scarf("Timbers", "Argyle", "pics/ptfc2.jpg");
@@ -19,15 +28,6 @@ var camoTimbers = new Scarf("Timbers", "Camo Timbers", "pics/ptfc7.jpg");
 var casTimber = new Scarf("Timbers", "Cascade Timbers", "pics/ptfc8.jpg");
 var mlsChamps = new Scarf("Timbers", "MLS Champions", "pics/ptfc9.jpg");
 var spreadLove = new Scarf("Timbers", "Spread The Love", "pics/ptfc10.jpg");
-
-var scarfBox = [];
-
-function rebuildScarfBox () {
-	for (index=0; index < scarfBox.length; index++) {
-		scarfBox[index].y = 0;
-	}
-	voteAgain();
-}
 
 scarfBox.push(chainsaw, sawblade, tartan, rnChamp, argyle, whiteGreen, soccerCity, champs, rctid, mlsChamps, camoTimbers, spreadLove, casTimber);
 
@@ -57,7 +57,6 @@ var mlsChampsLongData = new MarketItem("MLS Champions", "pics/ptfc9.jpg");
 var spreadLoveLongData = new MarketItem("Spread The Love", "pics/ptfc10.jpg");
 
 marketBoxLong.push(chainsawLongData, sawbladeLongData, tartanLongData, rnChampLongData, argyleLongData, whiteGreenLongData, soccerCityLongData, champsLongData, rctidLongData, mlsChampsLongData, camoTimbersLongData, spreadLoveLongData, casTimberLongData);
-
 
 /* Holds long term View Data */
 var marketBoxTotal = [];
