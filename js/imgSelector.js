@@ -4,6 +4,7 @@ function imgSelector(array) {
 	var picDelivered = 3; // Change the array length of pictures returned
 	which = [];
 	voteCount++;
+
 	if (voteCount > 15) {
 		console.log("imgSelector is launching resultTable")
 		drawChart(scarfBox);
@@ -19,6 +20,8 @@ function imgSelector(array) {
 			i -= 1;
 			continue;
 		} else {
+			marketBoxTotal[picSelect].y++
+			console.log("This is view y: "+marketBoxTotal[picSelect].y)
 			console.log("Attempting to push "+theSelection+" to scarfPic"+i+"!");
 			which.push(picSelect);
 			document.getElementById("scarfPic"+i).src = theSelection;
@@ -29,18 +32,13 @@ function imgSelector(array) {
 
 function upvoteClick(event) {
 	var imageSource = event.target;
-	//console.log(imageSource);
 	var getSource = imageSource.src;
 	for (var index = 0; index < scarfBox.length; index++) {
-		//console.log("is "+scarfBox[index].image+" = "+getSource);
 		if (getSource.indexOf(scarfBox[index].image) >= 0) {
-			//console.log("found it: "+imageSource.src+" adding one to upvotes");
-			//console.log(scarfBox[index].upVotes);
 			scarfBox[index].y++;
-			//console.log(scarfBox[index].upVotes);
+			marketBoxLong[index].y++
 			imgSelector(scarfBox);
 		} else {
-			//console.log(scarfBox[index].image+" != "+getSource);
 		}
 	}
 }
