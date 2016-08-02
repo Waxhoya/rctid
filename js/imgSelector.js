@@ -14,15 +14,15 @@ function imgSelector(array) {
 	for (i = 1; i <= picDelivered; i++) {
 		var picSelect = Math.floor(Math.random() * scarfBox.length);
 		var theSelection = array[picSelect].image;
-		console.log("Selected: "+theSelection+" : "+which+" Long: "+!which.indexOf(picSelect));
+		// console.log("Selected: "+theSelection+" : "+which+" Long: "+!which.indexOf(picSelect));
 		if (which.indexOf(picSelect) != -1) {
 			console.log(picSelect+" already Selected.");
 			i -= 1;
 			continue;
 		} else {
 			marketBoxTotal[picSelect].y++
-			console.log("This is view y: "+marketBoxTotal[picSelect].y)
-			console.log("Attempting to push "+theSelection+" to scarfPic"+i+"!");
+			// console.log("This is view y: "+marketBoxTotal[picSelect].y)
+			// console.log("Attempting to push "+theSelection+" to scarfPic"+i+"!");
 			which.push(picSelect);
 			document.getElementById("scarfPic"+i).src = theSelection;
 		}

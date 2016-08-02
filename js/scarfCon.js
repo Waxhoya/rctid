@@ -33,7 +33,7 @@ scarfBox.push(chainsaw, sawblade, tartan, rnChamp, argyle, whiteGreen, soccerCit
 
 
 /* Smaller Obj to hold user sats */
-function marketItem(name, imageLocation) {
+function MarketItem(name, imageLocation) {
 	this.image = imageLocation;
 	this.label = name;
 	this.y = 0;
@@ -42,19 +42,19 @@ function marketItem(name, imageLocation) {
 /* Holds long term user vote Data */
 var marketBoxLong = [];
 
-var chainsawLongData = new marketItem("Chainsaw Border", "pics/ptfcs1.jpg");
-var rnChampLongData = new marketItem("Champions 15 RoughNeck", "pics/ptfc1.jpg");
-var argyleLongData = new marketItem("Argyle", "pics/ptfc2.jpg");
-var sawbladeLongData = new marketItem("Saw Blade", "pics/ptfcs2.jpg");
-var whiteGreenLongData = new marketItem("White and Green", "pics/ptfc3.jpg");
-var tartanLongData = new marketItem("The Tartan", "pics/ptfcs3.jpg");
-var rctidLongData = new marketItem("Rose City Til I Die", "pics/ptfc4.jpg");
-var champsLongData = new marketItem("2015 Champs", "pics/ptfc5.jpg");
-var soccerCityLongData = new marketItem("Soccer City USA", "pics/ptfc6.jpg");
-var camoTimbersLongData = new marketItem("Camo Timbers", "pics/ptfc7.jpg");
-var casTimberLongData = new marketItem("Cascade Timbers", "pics/ptfc8.jpg");
-var mlsChampsLongData = new marketItem("MLS Champions", "pics/ptfc9.jpg");
-var spreadLoveLongData = new marketItem("Spread The Love", "pics/ptfc10.jpg");
+var chainsawLongData = new MarketItem("Chainsaw Border", "pics/ptfcs1.jpg");
+var rnChampLongData = new MarketItem("Champions 15 RoughNeck", "pics/ptfc1.jpg");
+var argyleLongData = new MarketItem("Argyle", "pics/ptfc2.jpg");
+var sawbladeLongData = new MarketItem("Saw Blade", "pics/ptfcs2.jpg");
+var whiteGreenLongData = new MarketItem("White and Green", "pics/ptfc3.jpg");
+var tartanLongData = new MarketItem("The Tartan", "pics/ptfcs3.jpg");
+var rctidLongData = new MarketItem("Rose City Til I Die", "pics/ptfc4.jpg");
+var champsLongData = new MarketItem("2015 Champs", "pics/ptfc5.jpg");
+var soccerCityLongData = new MarketItem("Soccer City USA", "pics/ptfc6.jpg");
+var camoTimbersLongData = new MarketItem("Camo Timbers", "pics/ptfc7.jpg");
+var casTimberLongData = new MarketItem("Cascade Timbers", "pics/ptfc8.jpg");
+var mlsChampsLongData = new MarketItem("MLS Champions", "pics/ptfc9.jpg");
+var spreadLoveLongData = new MarketItem("Spread The Love", "pics/ptfc10.jpg");
 
 marketBoxLong.push(chainsawLongData, sawbladeLongData, tartanLongData, rnChampLongData, argyleLongData, whiteGreenLongData, soccerCityLongData, champsLongData, rctidLongData, mlsChampsLongData, camoTimbersLongData, spreadLoveLongData, casTimberLongData);
 
@@ -62,18 +62,18 @@ marketBoxLong.push(chainsawLongData, sawbladeLongData, tartanLongData, rnChampLo
 /* Holds long term View Data */
 var marketBoxTotal = [];
 
-var chainsawTotal = new marketItem("Chainsaw Border", "pics/ptfcs1.jpg");
-var rnChampTotal = new marketItem("Champions 15 RoughNeck", "pics/ptfc1.jpg");
-var argyleTotal = new marketItem("Argyle", "pics/ptfc2.jpg");
-var sawbladeTotal = new marketItem("Saw Blade", "pics/ptfcs2.jpg");
-var whiteGreenTotal = new marketItem("White and Green", "pics/ptfc3.jpg");
-var tartanTotal = new marketItem("The Tartan", "pics/ptfcs3.jpg");
-var rctidTotal = new marketItem("Rose City Til I Die", "pics/ptfc4.jpg");
-var champsTotal = new marketItem("2015 Champs", "pics/ptfc5.jpg");
-var soccerCityTotal = new marketItem("Soccer City USA", "pics/ptfc6.jpg");
-var camoTimbersTotal = new marketItem("Camo Timbers", "pics/ptfc7.jpg");
-var casTimberTotal = new marketItem("Cascade Timbers", "pics/ptfc8.jpg");
-var mlsChampsTotal = new marketItem("MLS Champions", "pics/ptfc9.jpg");
-var spreadLoveTotal = new marketItem("Spread The Love", "pics/ptfc10.jpg");
+var chainsawTotal = new MarketItem("Chainsaw Border", "pics/ptfcs1.jpg");
+var rnChampTotal = new MarketItem("Champions 15 RoughNeck", "pics/ptfc1.jpg");
+var argyleTotal = new MarketItem("Argyle", "pics/ptfc2.jpg");
+var sawbladeTotal = new MarketItem("Saw Blade", "pics/ptfcs2.jpg");
+var whiteGreenTotal = new MarketItem("White and Green", "pics/ptfc3.jpg");
+var tartanTotal = new MarketItem("The Tartan", "pics/ptfcs3.jpg");
+var rctidTotal = new MarketItem("Rose City Til I Die", "pics/ptfc4.jpg");
+var champsTotal = new MarketItem("2015 Champs", "pics/ptfc5.jpg");
+var soccerCityTotal = new MarketItem("Soccer City USA", "pics/ptfc6.jpg");
+var camoTimbersTotal = new MarketItem("Camo Timbers", "pics/ptfc7.jpg");
+var casTimberTotal = new MarketItem("Cascade Timbers", "pics/ptfc8.jpg");
+var mlsChampsTotal = new MarketItem("MLS Champions", "pics/ptfc9.jpg");
+var spreadLoveTotal = new MarketItem("Spread The Love", "pics/ptfc10.jpg");
 
 marketBoxTotal.push(chainsawTotal, sawbladeTotal, tartanTotal, rnChampTotal, argyleTotal, whiteGreenTotal, soccerCityTotal, champsTotal, rctidTotal, mlsChampsTotal, camoTimbersTotal, spreadLoveTotal, casTimberTotal);

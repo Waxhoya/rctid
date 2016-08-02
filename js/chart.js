@@ -3,6 +3,7 @@ var scarfChart;
 function drawChart(array) {
   var flipChart = document.getElementById("chartTarget").className = "";
 	scarfChart = new CanvasJS.Chart("chartTarget", {
+
 		title:{
 			text: "Scarf popularity"
 		},
@@ -32,15 +33,18 @@ function voteAgain () {
 function drawChartStack() {
   var flipChart = document.getElementById("chartTarget").className = "";
 	scarfChart = new CanvasJS.Chart("chartTarget", {
-		title:{
-			text: "Agreggate total"
+
+    title:{
+			text: "Marketing total"
 		},
     data: [
   {
-    type: "stackedColumn",
+    color: "red",
+    type: "column",
     dataPoints: marketBoxTotal
   },  {
-    type: "stackedColumn",
+    color: "green",
+    type: "column",
     dataPoints: marketBoxLong
   }
   ]
