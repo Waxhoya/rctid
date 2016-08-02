@@ -6,7 +6,7 @@ This app allow the collection of consumer data by presenting a choice between th
 
 #### User/Consumer Interface
 
-<li>Three items are shown. The user selects their favorite by clicking on it. After 15 votes the user feedback is presented as a graph to inform the user of the choices./li>
+<li>Three items are shown. The user selects their favorite by clicking on it. After 15 votes the user feedback is presented as a graph to inform the user of the choices.</li>
 
 <li>With the Vote Again button the user can start the voter-app again to continue voting.</li>
 
