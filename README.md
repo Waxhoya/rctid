@@ -16,7 +16,7 @@ This app allow the collection of consumer data by presenting a choice between th
 
 The Marketing button will display an overall voter-app stats.
 
-##### Objects Constructors & Functions
+#### Objects Constructors & Functions
 
 <ul>
 	<li>new Scarf(team, name, imageLocation) creates a new product object. Must be scarfBox.push('newScarfObject')</li>
@@ -30,4 +30,10 @@ The Marketing button will display an overall voter-app stats.
 	<li>voteAgain() sets the CSS to change visability and starts the voter-app over again.
 	</li>
 	<li>rebuildScarfBox() loops to set the array scarfBox[].y value needed to clean data between users.</li>
+</ul>
+
+#### HTML localStorage
+<ul>
+	<li>storeData(key, tarArray) stores the marketing data as a JSON and saves onclick.
+	</li>getMyData(key, tarArray) retreives the data and formats it into Scarf Objects.
 </ul>

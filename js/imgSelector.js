@@ -38,6 +38,8 @@ function upvoteClick(event) {
 			scarfBox[index].y++;
 			marketBoxLong[index].y++
 			imgSelector(scarfBox);
+			storeData("votes", marketBoxLong);
+			storeData("viewed", marketBoxTotal);
 		} else {
 		}
 	}

@@ -1,7 +1,6 @@
 function Scarf(team, name, imageLocation) {
 	this.team = team;
 	this.image = imageLocation;
-	this.upVotes = 0;
 	this.label = name;
 	this.y = 0;
 }
