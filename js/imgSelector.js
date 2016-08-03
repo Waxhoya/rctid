@@ -4,7 +4,7 @@ function imgSelector(array) {
 	var picDelivered = 3; // Change the array length of pictures returned
 	which = [];
 	voteCount++;
-
+	var update = document.getElementById("voteDisplay").innerHTML="<h4>"+(voteCount-1)+"/ 15 votes</h4>";
 	if (voteCount > 15) {
 		console.log("imgSelector is launching resultTable")
 		drawChart(scarfBox);
