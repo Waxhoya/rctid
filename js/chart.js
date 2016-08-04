@@ -58,3 +58,7 @@ function drawChartStack() {
   var flip3 = document.getElementById("scarfPic3").className = "hidden";
   var flip4 = document.getElementById("voteAgain").className = "button";
 }
+
+function clearData() {
+  localStorage.clear();
+}

@@ -1,7 +1,8 @@
 function storeData(key, tarArray) {
 	localStorage.setItem(key, JSON.stringify(tarArray));
 }
-var madeArray = []
+
+var madeArray = [] // This is
 function getMyData(key, tarArray) {
 	madeArray = JSON.parse(localStorage.getItem(key));
 	for (index = 0; index < madeArray.length; index++) {

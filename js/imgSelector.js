@@ -29,7 +29,6 @@ function imgSelector(array) {
 	}
 }
 
-
 function upvoteClick(event) {
 	var imageSource = event.target;
 	var getSource = imageSource.src;

@@ -34,6 +34,7 @@ The Marketing button will display an overall voter-app stats.
 
 #### HTML localStorage
 <ul>
-	<li>storeData(key, tarArray) stores the marketing data as a JSON and saves onclick.
-	</li>getMyData(key, tarArray) retreives the data and formats it into Scarf Objects.
+	<li>storeData(key, tarArray) stores the marketing data as a JSON and saves onclick.</li>
+	<li>getMyData(key, tarArray) retreives the data and formats it into Scarf Objects.</li>
+	<li>clearData() clears the localStorage
 </ul>
