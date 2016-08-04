@@ -1,7 +1,7 @@
 function storeData(key, tarArray) {
 	localStorage.setItem(key, JSON.stringify(tarArray));
 }
-var madeArray = []
+var madeArray = [];
 function getMyData(key, tarArray) {
 	madeArray = JSON.parse(localStorage.getItem(key));
 	for (index = 0; index < madeArray.length; index++) {
@@ -10,5 +10,15 @@ function getMyData(key, tarArray) {
 		tarArray.push(scarf);
 	}
 }
-document.addEventListener("load", getMyData("votes", marketBoxLong));
-document.addEventListener("load", getMyData("viewed", marketBoxTotal));
+
+function getMyMarketData(key, tarArray) {
+	madeArray = JSON.parse(localStorage.getItem(key));
+	for (index = 0; index < madeArray.length; index++) {
+		var makeMe = madeArray[index];
+		var scarfM = new MarketItem(makeMe.team, makeMe.label, makeMe.y);
+		tarArray.push(scarfM);
+	}
+}
+
+document.addEventListener("load", getMyMarketData("votes", marketBoxLong));
+document.addEventListener("load", getMyMarketData("viewed", marketBoxTotal));
