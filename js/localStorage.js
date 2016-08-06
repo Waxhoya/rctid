@@ -2,7 +2,8 @@ function storeData(key, tarArray) {
 	localStorage.setItem(key, JSON.stringify(tarArray));
 }
 
-var madeArray = [] // This is
+var madeArray = []
+
 function getMyData(key, tarArray) {
 	madeArray = JSON.parse(localStorage.getItem(key));
 	for (index = 0; index < madeArray.length; index++) {
@@ -11,5 +12,7 @@ function getMyData(key, tarArray) {
 		tarArray.push(scarf);
 	}
 }
+
 document.addEventListener("load", getMyData("votes", marketBoxLong));
+
 document.addEventListener("load", getMyData("viewed", marketBoxTotal));

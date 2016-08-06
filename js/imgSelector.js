@@ -20,7 +20,7 @@ function imgSelector(array) {
 			i -= 1;
 			continue;
 		} else {
-			marketBoxTotal[picSelect].y++
+			marketBoxTotal[picSelect].y++ //Total view data
 			// console.log("This is view y: "+marketBoxTotal[picSelect].y)
 			// console.log("Attempting to push "+theSelection+" to scarfPic"+i+"!");
 			which.push(picSelect);
