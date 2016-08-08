@@ -14,6 +14,7 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
 }
 
 .scarfImg {
@@ -24,10 +25,16 @@ html {
 	width: 480px;
 	height: auto;
 	border: 0px;
+	opacity: 1;
+}
+
+.scarfImg:hover {
+	opacity: 0.5;
 }
 
 .hidden {
 	display: none;
+	transition-delay: 1s;
 }
 
 .shown {
@@ -36,16 +43,6 @@ html {
 }
 
 .fade-in {
-	-webkit-animation: fade-in .8s ease;
-	-moz-animation: fade-in ease-in-out .8s both;
-	-ms-animation: fade-in ease-in-out .8s both;
-	-o-animation: fade-in ease-in-out .8s both;
-	animation: fade-in .8s ease;
 	visibility: visible;
-	-webkit-backface-visibility: hidden;
+	transition:
 }
-
-@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
-@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
-@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
-@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}

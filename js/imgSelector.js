@@ -39,6 +39,7 @@ function upvoteClick(event) {
 			imgSelector(scarfBox);
 			storeData("votes", marketBoxLong);
 			storeData("viewed", marketBoxTotal);
+
 		} else {
 		}
 	}

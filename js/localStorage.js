@@ -1,8 +1,8 @@
+var madeArray = []
+
 function storeData(key, tarArray) {
 	localStorage.setItem(key, JSON.stringify(tarArray));
 }
-
-var madeArray = []
 
 function getMyData(key, tarArray) {
 	madeArray = JSON.parse(localStorage.getItem(key));
@@ -12,6 +12,13 @@ function getMyData(key, tarArray) {
 		tarArray.push(scarf);
 	}
 }
+
+function clearData() {
+	localStorage.clear();
+	alert("localStorage has been removed");
+	return null;
+}
+
 
 document.addEventListener("load", getMyData("votes", marketBoxLong));
 

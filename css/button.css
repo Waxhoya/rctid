@@ -11,3 +11,15 @@
 	font:          normal 400 18px/1 "Space Mono", sans-serif;
 	text-shadow:   1px 1px 0 #f3f3f3;
 }
+.button:hover {
+	opacity: .5;
+}
+
+
+.red {
+	color: black;
+	background:	-webkit-linear-gradient(red, yellow);
+	background: linear-gradient(red, yellow);
+	text-shadow: 1px 1px 0 orange;
+	opacity: 1;
+}

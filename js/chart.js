@@ -20,7 +20,6 @@ function drawChart(array) {
   var flip3 = document.getElementById("scarfPic3").className = "hidden";
   var flip4 = document.getElementById("voteAgain").className = "button";
 }
-//window.addEventListener("load", drawChart);
 
 /* Exposes the Scarf voter to allow more votes*/
 function voteAgain () {
@@ -61,4 +60,5 @@ function drawChartStack() {
 
 function clearData() {
   localStorage.clear();
+  alert("Cleared... You wanted all the data deleted right?");
 }
