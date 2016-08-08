@@ -17,6 +17,10 @@ This app allow the collection of consumer data by presenting a choice between th
 The product pictures chage opacity on :hover
 Buttons change opacity on :hover
 
+#### Clear Data Button
+
+This has been updated to a Red scheme to warn the user. It also alerts that the localStorage has been cleared. 
+
 #### Marketing interface
 
 The Marketing button will display an overall voter-app stats.
