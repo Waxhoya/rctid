@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700|Permanent+Marker' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Lobster|Space+Mono' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 
-</head>
-<body>
-	<title>Rose City Scarves | RCTID </title>
-	<nav>
-	</nav>
+	</head>
+	<body>
 
-	<img id="firstPic" class="scarfImg"
+		<title>Rose City Scarves | RCTID </title>
+		<nav>
+			<button id="voteAgain" onclick="voteAgain()" class="hidden">Vote Again?</button>
+			<button id="Marketing Chart" onclick="drawChartStack()" class="button">Marketing</button>
+			<button id="newUser" onclick="rebuildScarfBox()" class="button">New User</button>
+			<button id="clearData" onclick="clearData()" class="button red">Clear Data</button>
+		</nav>
+
+		<table id="resultSpot" class="hidden"></table>
+
+		<h1>Scarf Squad</h1>
+		<h3 class="oneTimeShow" >Timbers Edition</h3>
+
+		<div id="voteDisplay" class=""></div>
+
+		<div id="chartTarget"></div>
+
+		<div class="shown">
+			<img id="scarfPic1" class="scarfImg fade-in" />
+		</div>
+		<div class="shown">
+				<img id="scarfPic2" class="scarfImg fade-in"/>
+		</div>
+		<div class="shown">
+				<img id="scarfPic3" class="scarfImg fade-in" />
+		</div>
 
 
-	<script src="js/scarfContructor.js"></script>
-</body>
+		<script src="js/resultTable.js"></script>
+		<script src="js/scarfCon.js"></script>
+		<script src="js/imgSelector.js"></script>
+		<script src="js/canvasjs.min.js"></script>
+		<script src="js/chart.js"></script>
+		<script src="js/localStorage.js"></script>
+		<script>imgSelector(scarfBox)</script>
+
+	</body>
 </html>

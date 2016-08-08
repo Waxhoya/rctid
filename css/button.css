@@ -1,0 +1,24 @@
+.button {
+	background:    #fff;
+	background:    -webkit-linear-gradient(#fff, #ccc);
+	background:    linear-gradient(#fff, #ccc);
+	border:        1px solid #ccc;
+	border-radius: 999px;
+	box-shadow:    0 2px 0 0 #666;
+	color:         #000;
+	display:       inline-block;
+	padding:       10px 25px;
+	font:          normal 400 18px/1 "Space Mono", sans-serif;
+	text-shadow:   1px 1px 0 #f3f3f3;
+}
+.button:hover {
+	opacity: .5;
+}
+
+.red {
+	color: black;
+	background:	-webkit-linear-gradient(red, yellow);
+	background: linear-gradient(red, yellow);
+	text-shadow: 1px 1px 0 orange;
+	opacity: 1;
+}

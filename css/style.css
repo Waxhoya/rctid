@@ -1,3 +1,48 @@
-scarfImg {
-	
+/*  CSS related to positioning and function  */
+
+h1 { /* Additional styling in fonts */
+	margin: 12px;
+}
+h2 { /* Additional styling in fonts */
+	margin: 12px;
+}
+
+html {
+	background-image:url("../pics/field.jpg");
+	background-color: (0, 0, 0, 0.3);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.scarfImg {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	padding-top: 15px;
+	width: 480px;
+	height: auto;
+	border: 0px;
+	opacity: 1;
+}
+
+.scarfImg:hover {
+	opacity: 0.5;
+}
+
+.hidden {
+	display: none;
+	transition-delay: 1s;
+}
+
+.shown {
+	border: black solid 1px 5px;
+	margin: 5px;
+}
+
+.fade-in {
+	visibility: visible;
+	transition:
 }
