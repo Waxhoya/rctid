@@ -12,6 +12,11 @@ This app allow the collection of consumer data by presenting a choice between th
 
 <li>The new User button allows the user to restart the voter-app while reseting the user data. This data is not removed but available in the Marketing Interface.</li>
 
+#### Animations and transitions
+
+The product pictures chage opacity on :hover
+Buttons change opacity on :hover
+
 #### Marketing interface
 
 The Marketing button will display an overall voter-app stats.
@@ -25,7 +30,7 @@ The Marketing button will display an overall voter-app stats.
 	<li>imgSelector(scarfBox) selects a random picture and check to see it hasn't been used. The it tallies the use and pushes the elemets. </li>
 	<li>drawChart() renders a canvasJS chart of the current user data. It is called on 15 votes or the Vote Again button
 	</li>
-	<li>drawChartStack() rendersa a canvasJS chart of the total user data collected. It can be called with the marketing button.
+	<li>drawChartStack() rendersa a canvasJS chart of the total user daTta collected. It can be called with the marketing button.
 	</li>
 	<li>voteAgain() sets the CSS to change visability and starts the voter-app over again.
 	</li>
@@ -36,5 +41,5 @@ The Marketing button will display an overall voter-app stats.
 <ul>
 	<li>storeData(key, tarArray) stores the marketing data as a JSON and saves onclick.</li>
 	<li>getMyData(key, tarArray) retreives the data and formats it into Scarf Objects.</li>
-	<li>clearData() clears the localStorage
-</ul>
+	<li>clearData() clears the localStorage and is attached to the red button
+labeled Clear Data in the nav div.</ul>
